@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ətraf mühit </title>
+
+    <style>
+        .aspa {
+            width: 100%;
+            height: 500px;
+        }
+
+        .yay {
+            height: 400px;
+            width: 350px;
+            background: url(yay-fesli-1.jpg) center / cover;
+            transition: .4s;
+            scale: 1.00;
+            margin-top: 15px;
+            margin-left: 10px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 0px greenyellow;
+        }
+
+        .yay:hover {
+            scale: 1.03;
+            box-shadow: 3px 3px 3px greenyellow;
+        }
+
+        .yaz {
+            height: 400px;
+            width: 350px;
+            background: url(yaz.jpg) center / cover;
+            transition: .4s;
+            margin-top: 15px;
+            margin-left: 10px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 0px palevioletred;
+        }
+
+        .yaz:hover {
+            scale: 1.03;
+            box-shadow: 3px 3px 3px palevioletred;
+        }
+
+        .payiz {
+            height: 400px;
+            width: 350px;
+            background: url(payiz.jpg) center / cover;
+            transition: .4s;
+            scale: 1.00;
+            margin-top: 15px;
+            margin-left: 10px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 0px black;
+        }
+
+        .payiz:hover {
+            scale: 1.03;
+            box-shadow: 4px 4px 4px black;
+        }
+
+        .qis {
+            height: 400px;
+            width: 350px;
+            background: url(qis.jpg) center / cover;
+            transition: .4s;
+            scale: 1.00;
+            margin-top: 15px;
+            margin-left: 10px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 0px cyan;
+        }
+
+        .qis:hover {
+            scale: 1.03;
+            box-shadow: 3px 3px 3px cyan;
+        }
+
+        #yay {
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: .4s;
+            height: 25px;
+            width: 50px;
+        }
+
+        #yay:hover {
+            scale: 1.13;
+            background-color: greenyellow;
+            box-shadow: 4px 4px 4px black;
+        }
+
+        #yaz {
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: .4s;
+            height: 25px;
+            width: 50px;
+        }
+
+        #yaz:hover {
+            scale: 1.13;
+            background-color: palevioletred;
+            box-shadow: 4px 4px 4px black;
+        }
+
+        #payiz {
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: .4s;
+            height: 25px;
+            width: 50px;
+        }
+
+        #payiz:hover {
+            scale: 1.13;
+            background-color: orange;
+            box-shadow: 4px 4px 4px black;
+        }
+
+        #qis {
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: .4s;
+            height: 25px;
+            width: 50px;
+        }
+
+        #qis:hover {
+            scale: 1.13;
+            background-color: cyan;
+            box-shadow: 3px 3px 3px black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button onclick="yay()" id="yay">Yay</button>
+    <button onclick="yaz()" id="yaz">Yaz</button>
+    <button onclick="payiz()" id="payiz">Payız</button>
+    <button onclick="qis()" id="qis">Qış</button>
+    <div id="aspa"></div>
+
+    <script>
+
+        const list = document.getElementById('aspa');
+        function yay() {
+            list.classList.add('yay');
+            list.classList.remove('yaz');
+            list.classList.remove('payiz');
+            list.classList.remove('qis');
+        }
+        function yaz() {
+            list.classList.remove('yay');
+            list.classList.add('yaz');
+            list.classList.remove('payiz');
+            list.classList.remove('qis');
+        }
+        function payiz() {
+            list.classList.remove('yay');
+            list.classList.remove('yaz');
+            list.classList.add('payiz');
+            list.classList.remove('qis');
+        }
+        function qis() {
+            list.classList.remove('yay');
+            list.classList.remove('yaz');
+            list.classList.remove('payiz');
+            list.classList.add('qis');
+        }
+
+    </script>
+
+</body>
+
+</html>
